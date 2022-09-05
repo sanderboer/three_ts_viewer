@@ -7,7 +7,7 @@ module.exports = merge(common, {
     devtool: 'source-map',
     externals: ['three', 'html2canvas', 'libtess', 'proj4'],
     output: {
-        path: path.resolve(__dirname, 'build/'),
+        path: path.resolve(__dirname, 'build/dist'),
         clean: true
     }
 })

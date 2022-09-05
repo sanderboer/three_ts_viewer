@@ -1,15 +1,18 @@
 {
     "name": "@sanderboer/three_ts_viewer",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": {
         "name": "Sander Boer",
         "email": "sander@mauc.nl"
     },
-    "description" : "a threejs based 3d viewer package for your project.",
-    "main": "build/Three3dViewer",
-    "files": ["build/*"],
+    "description": "a threejs based 3d viewer package for your project.",
+    "main": "build/src/index.js",
+    "files": [
+        "build/*"
+    ],
     "scripts": {
-        "prepublishOnly": "npm run build",
+        "clean": "shx rm -rf build",
+        "prepublishOnly": "npm run clean && npx tsc && npm run build",
         "build": "webpack --config ./webpack.package.js",
         "dev": "webpack serve --config ./webpack.dev.js"
     },
@@ -24,6 +27,7 @@
         "@types/proj4": "2.5.2",
         "@types/three": "0.140.0",
         "prettier": "2.6.2",
+        "shx": "^0.3.4",
         "ts-loader": "9.2.6",
         "typescript": "4.0.3",
         "webpack": "5.74.0",
