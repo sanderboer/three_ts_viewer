@@ -11,8 +11,6 @@
     "noImplicitAny": false,
 
     "importHelpers": false, // was true, maar es5/6 trekt dat niet
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "downlevelIteration": false, // was true, maar ik zet m op false voor meer performance

@@ -5,6 +5,6 @@ my_headers.append("cache-control", "no-cache");
 
 
 function initialize_webviewer() {
-  web_viewer = new MaucWebViewer.WebViewer("WebGLCanvas");
+  web_viewer = new Three3dViewer.WebViewer("WebGLCanvas");
   web_viewer.init();
 }
