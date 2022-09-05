@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "es2020", "dom" ], //was es6
+    "module": "es2020", // was es6
+    "moduleResolution": "node",
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+
+    "importHelpers": false, // was true, maar es5/6 trekt dat niet
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "downlevelIteration": false, // was true, maar ik zet m op false voor meer performance
+
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "es5", //es5 browser support vanaf 2012. es6 browser support vanaf 2017/2018.
+
+    "moduleResolution": "node",
+   // "strict": true,
+    "typeRoots": [
+            "node_modules/@types",
+            "typings/",
+            "node_modules/three/src/**/*.ts",
+            "node_modules/three/examples/js/controls/**/*.ts"
+    ],
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ]
+
+}

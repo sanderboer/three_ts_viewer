@@ -1,0 +1,13 @@
+###############################
+# Core EditorConfig Options   #
+###############################
+root = true
+# All files
+[*]
+indent_style = space
+end_of_line = lf  # VERY CONTESTED, prefer lf, interoperability with mac/linux.
+charset = utf-8 # CONTESTED, prefer utf-8
+max_line_length = 120
+
+indent_size = 2
+

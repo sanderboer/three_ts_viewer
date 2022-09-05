@@ -1,0 +1,15 @@
+.prettier.config.js
+Program.cs
+Startup.cs
+Web3DViewer.csproj
+bundleconfig.json
+gulpfile.js
+package-lock.json
+package.json
+tsconfig-es5.json
+tsconfig.json
+web.config
+Properties
+build
+node_modules
+wwwroot
